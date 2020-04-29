@@ -1,0 +1,27 @@
+body{
+	background-color: grey;
+}
+#container{
+	margin:auto;
+	width: 1000;
+	height: 700px;
+	background-color: #6b0c24; 
+	border: thick;
+	border-radius: 10px;
+}
+.hello{
+	width: 400px; 
+	height: 500px;
+	float: left;
+	border: thin;
+	margin: 10px;
+	border-color: #6b0c24;
+}
+#table{
+	width: 400px; 
+	height: 500px;
+	float: left;
+	border: thin;
+	margin: 10px;
+	border-color: red;
+}

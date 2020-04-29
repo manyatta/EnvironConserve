@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.manyatta.environconserve.Login">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textView_style"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:textColor="#D4FFFF"
+            android:text="User Login...!"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editTextPassword" />
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/editTextUsername"
+            android:hint="Your Name Here..."
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/editTextPassword"
+            android:layout_alignParentStart="true" />
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/editTextPassword"
+            android:hint="Your Password Here"
+            android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-,."
+            android:inputType="textPassword"
+            android:layout_above="@+id/user_login"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="33dp" />
+
+        <Button
+            style="@style/button_style"
+            android:id="@+id/user_login"
+            android:text="Login"
+            android:onClick="userLogin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/editTextPassword" />
+
+        <Button
+            style="@style/button_style"
+            android:id="@+id/user_reg"
+            android:text="Not a member? \n Click here to Register"
+            android:onClick="userReg"
+            android:layout_below="@+id/user_login"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp" />
+
+        <TextView
+            android:id="@+id/forgot_pass"
+            style="@style/textView_style"
+            android:textColor="#0000FF"
+            android:textSize="20dp"
+            android:onClick="resetPassword"
+            android:text="Forgot Password?"
+            android:textAllCaps="false"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/user_reg"
+            android:layout_centerHorizontal="true" />
+</RelativeLayout>

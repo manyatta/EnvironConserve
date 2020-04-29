@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.manyatta.environconserve.KPost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/textView_style"
+            android:textColor="#D4FFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/imageadd"/>
+
+        <TextView
+            style="@style/textView_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Path: "
+            android:textSize="7dp"
+            android:id="@+id/path"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <TextView
+            android:id="@+id/textViewLat"
+            style="@style/textView_style"
+            android:layout_below="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textViewLong"
+            style="@style/textView_style"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="45dp" />
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/editTextActivity"
+            android:hint="Activity e.g charcoal burning"
+            android:inputType="textPersonName"
+            android:layout_alignParentStart="true" />
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/sCounty"
+            />
+
+
+        <Button
+            style="@style/button_style"
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            />
+
+    </LinearLayout>
+</ScrollView>

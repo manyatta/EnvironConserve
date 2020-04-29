@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.manyatta.environconserve.adminLogin">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/textView_style"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textColor="#D4FFFF"
+        android:text="Admin Login...!"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextPassword" />
+
+    <EditText
+        android:id="@+id/officeNumber"
+        android:inputType="textPersonName"
+        android:hint="Office Number..."
+        style="@style/editText_style"
+        android:layout_above="@+id/password"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="Your Password Here"
+        style="@style/editText_style"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/admin_login"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/admin_login"
+        android:text="Login"
+        android:onClick="adminLogin"
+        style="@style/button_style"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@+id/editTextPassword"
+        />
+
+
+</RelativeLayout>

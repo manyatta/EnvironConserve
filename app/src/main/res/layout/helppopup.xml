@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="475dp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/txtclose"
+        android:layout_gravity="end"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@android:drawable/presence_offline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nema"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:text="The main aim of NEMA body is to Ensure a clean, healthy, and sustainable environment in Kenya through supervision and coordination of all matters relating to the environment. \n      Cases to be Reported are Such as:\n        -Noise Pollution Cases\n        -Improper Land Use\n        -Improper Utilization of Natural            Resources e.tc"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

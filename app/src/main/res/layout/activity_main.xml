@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.manyatta.environconserve.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textView_style"
+            android:fontFamily="serif-monospace"
+            android:text="Hello Kenya"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/blue" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textView_style"
+            android:fontFamily="serif-monospace"
+            android:text="Our Environment\nThe Light of Tommorow"
+            android:textSize="20dp" />
+        <Button
+            style="@style/button_style"
+            android:id="@+id/user"
+            android:text="USER"
+             />
+        <Button
+            style="@style/button_style"
+            android:id="@+id/help"
+            android:text="Help"
+            android:onClick="help"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="330dp"
+    android:layout_height="475dp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/txtclose"
+        android:layout_gravity="end"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@android:drawable/presence_offline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kfs"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Kenya Forest Service is a state corporation that was established under the Forest Act, 2005 (henceforth referred to as the Act). Commencing its operations in February 2007.\n The Service’s Expressed Mandate is: \n      -To enhance development, conservation and management of Kenya’s forest resources base in all public forests, and assist County Governments to develop and manage forest resources on community and private lands for the equitable benefit of present and future generations.\n                                CASES \n-Cases that Revolve Around Forest Misuse "
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
